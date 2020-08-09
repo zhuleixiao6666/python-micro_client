@@ -37,6 +37,16 @@ Make sure you have [the needed protobuf and plugins](https://github.com/micro/go
     s = Services(EtcdRegistry(EtcdClient(port=2379), '/micro/registry/'))
 ```
 
+### Consul
+```python
+   import requests
+   
+    from micro_client.registry.consulregistry import Registry
+    from micro_client.common import Services
+
+    s = Services('http://127.0.0.1:8500/v1', session=requests.Session()))
+```
+
 ### Use it!
 ```python
     service = s.resolve('some')
