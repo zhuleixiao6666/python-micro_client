@@ -11,7 +11,6 @@ services.
 
 
 ```shell script
-git clone https://gitlab.kalo-app.com/python/micro-client.git
 cd micro-client && python setup.py develop
 ```
 
